@@ -5,11 +5,12 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon --exec babel-node server.js --ignore public/",
+    "dev": "webpack -wd"
   },
-  "repository":{
-    "type":"git",
-    "url":"https://github.com/rshane/cryptocurrencyfunctions.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rshane/cryptocurrencyfunctions.git"
   },
   "keywords": [
     "cryptocurrency"
@@ -23,5 +24,17 @@
     "mongodb": "^3.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.15.0",
+    "eslint-plugin-react": "^7.5.1",
+    "nodemon": "^1.14.9",
+    "webpack": "^3.10.0"
   }
 }
